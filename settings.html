@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Settings</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef2ff,#e0f2fe);
+color:#1e293b;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 25px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-left,.nav-right{
+display:flex;
+align-items:center;
+}
+
+.logo{
+width:40px;
+height:40px;
+object-fit:contain;
+}
+
+.title{
+font-size:22px;
+font-weight:bold;
+color:#2563eb;
+text-align:center;
+flex:1;
+}
+
+.container{
+flex:1;
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:30px;
+}
+
+h1{
+margin-bottom:10px;
+}
+
+.settings-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+margin-top:20px;
+max-width:500px;
+width:100%;
+}
+
+.settings-box label{
+display:block;
+margin-top:15px;
+font-weight:500;
+font-size:14px;
+}
+
+.settings-box input,
+.settings-box select{
+width:100%;
+padding:10px;
+margin-top:6px;
+border-radius:6px;
+border:1px solid #cbd5e1;
+font-size:14px;
+}
+
+.settings-box button{
+margin-top:20px;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+font-size:14px;
+}
+
+.settings-box button:hover{
+background:#1d4ed8;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:white;
+border-top:1px solid #e2e8f0;
+font-size:14px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.title{
+order:-1;
+font-size:20px;
+}
+
+.container{
+padding:20px;
+}
+
+h1{
+font-size:22px;
+}
+
+}
+
+@media(max-width:500px){
+
+.logo{
+width:32px;
+height:32px;
+}
+
+.title{
+font-size:18px;
+}
+
+.settings-box{
+padding:20px;
+}
+
+.settings-box input,
+.settings-box select,
+.settings-box button{
+font-size:13px;
+padding:10px;
+}
+
+footer{
+font-size:13px;
+}
+.dashboard-btn{
+display:inline-block;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+.dashboard-btn:hover{
+background:#1d4ed8;
+transform:translateY(-2px);
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="nav-left">
+<img src="jharkhand-rai-university-logo-removebg-preview (1).png" class="logo">
+</div>
+
+<div class="title">NIDS</div>
+
+<div class="nav-right">
+<img src="logo.jpeg" class="logo">
+</div>
+
+</header>
+
+<div class="container">
+
+<h1>System Settings</h1>
+
+<div class="settings-box">
+
+<label>Email Alerts</label>
+<select>
+<option>Enabled</option>
+<option>Disabled</option>
+</select>
+
+<label>Block IP Address</label>
+<input type="text" placeholder="Enter IP Address">
+
+<label>Change Admin Password</label>
+<input type="password" placeholder="New Password">
+
+<button>Save Settings</button>
+
+</div>
+
+</div>
+
+<footer>
+<a href="index.html" class="dashboard-btn">⬅ Back to Dashboard</a>
+
+<br><br>
+© 2026 Honeypot Intrusion Detection System</footer>
+
+</body>
+</html>
